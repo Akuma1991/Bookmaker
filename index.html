@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bookmaker</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container py-5 border-bottom border-dark px-4">
+            <h2 class=" text-muted">Bookmaker</h2>
+        </div>
+    </header>
+
+    <section class="sectionOne">
+        <div class="container mt-3 px-5 rounded-3">
+            <div class=" text-center  py-5">
+                <h4>Bookmark your favourite sites</h4>
+                <div class="mt-5">
+                    <p>Site Name</p>
+                    <input type="text" id="siteName" placeholder="Bookmark Name" class=" form-control">
+                    <div role="alert" id="nameAlert"></div>
+                </div>
+                <div class=" mt-4">
+                    <p>Site URL</p>
+                    <input type="text" id="siteURL" placeholder="Website URL" class=" form-control">
+                    <div  role="alert" id="urlAlert"></div>
+                </div>
+                <div class="mt-4">
+                    <button class=" btn btn-primary py-2  px-3 me-5" id="siteSubmit">Submit</button>
+                    <button class=" btn btn-danger py-2  px-3" id="siteDelete">Delete all</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionTwo" id="bookMakerList">
+
+    </section>
+
+    <footer>
+        <div class="container mt-5 border-top border-dark py-4">
+            <h6 class=" text-muted mt-2">© 2021 Bookmarker Inc.</h5>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LINKS -->
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

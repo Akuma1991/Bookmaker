@@ -1,0 +1,6 @@
+.sectionOne .container{
+    background-color: #EEE;
+}
+.sectionTwo .container{
+    background-image: linear-gradient(#EEE,#FFF);
+}
