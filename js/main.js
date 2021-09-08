@@ -3,6 +3,7 @@ var siteUrl = document.getElementById('siteURL');
 var bookmarkList = document.getElementById('bookMakerList');
 var siteSubmit = document.getElementById('siteSubmit');
 var siteDelete = document.getElementById('siteDelete');
+var siteClear = document.getElementById('siteClear');
 var nameAlert = document.getElementById('nameAlert');
 var urlAlert = document.getElementById('urlAlert');
 
@@ -87,6 +88,11 @@ siteSubmit.addEventListener('click', function () {
 
 siteDelete.addEventListener('click', function () {
     deleteAllUrlLiks();
+});
+
+siteClear.addEventListener('click', function () {
+    clearAlerts();
+    clearInputs();
 });
 
 // function addUrlLinks() {
