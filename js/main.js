@@ -40,6 +40,24 @@ siteSubmit.addEventListener('click', function () {
         urlAlert.innerHTML = "Url Field is required";
         urlAlert.classList.add("alert", "alert-danger", "mt-2", "p-1");
     }
+    else if (siteUrl.value.toLowerCase().includes('https:') == false &&
+        siteUrl.value.toLowerCase().includes('www.') == false
+    ) {
+        clearAlerts();
+        nameAlert.innerHTML = "URL link is not correct";
+        nameAlert.classList.add("alert");
+        nameAlert.classList.add("alert-danger");
+        nameAlert.classList.add("mt-2");
+        nameAlert.classList.add("p-1");
+    }
+    else if (siteUrl.value.toLowerCase().includes('.com') == false) {
+        clearAlerts();
+        nameAlert.innerHTML = "URL link is not correct";
+        nameAlert.classList.add("alert");
+        nameAlert.classList.add("alert-danger");
+        nameAlert.classList.add("mt-2");
+        nameAlert.classList.add("p-1");
+    }
 
     else if (siteName.value != "" && siteUrl.value != "") {
         clearAlerts();
