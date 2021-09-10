@@ -41,7 +41,7 @@ siteSubmit.addEventListener('click', function () {
         urlAlert.classList.add("alert", "alert-danger", "mt-2", "p-1");
     }
     else if (siteUrl.value.toLowerCase().startsWith('https:') == false ||
-        siteUrl.value.toLowerCase().endsWith('.com') == false ||
+        siteUrl.value.toLowerCase().includes('.com') == false ||
         siteUrl.value.toLowerCase().includes(" ")) {
         clearAlerts();
         nameAlert.innerHTML = "URL link is not correct";
