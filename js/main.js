@@ -54,7 +54,7 @@ siteSubmit.addEventListener('click', function () {
     else if (siteName.value != "" && siteUrl.value != "") {
         clearAlerts();
         for (var i = 0; i < urlLinks.length; i++) {
-            if (siteUrl.value.toLowerCase() == urlLinks[i].websiteURL) {
+            if (siteUrl.value.toLowerCase().includes(urlLinks[i].websiteURL) || urlLinks[i].websiteURL.includes(siteUrl.value.toLowerCase())) {
                 nameAlert.innerHTML = "this url already exist";
                 nameAlert.classList.add("alert");
                 nameAlert.classList.add("alert-danger");
